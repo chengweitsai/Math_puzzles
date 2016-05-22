@@ -16,8 +16,11 @@ def factorize(li, N, D):
 		factorize(li, N, D+1)
 
 
-def check_prime():
-	print ""
+def check_prime(N):
+	limit = int (math.sqrt(N) )
+	for e in range(2,limit):
+		if(N%e ==0): return False
+	return True
 
 li = [];
 factorize(li, 13195, 2)
@@ -35,3 +38,7 @@ for i in range(2, limit):
 
 print ui
 print "next find the biggest prime in ui, it is the answer"
+resault=0
+for u in ui:
+	if(check_prime(u)): resault = u
+print "The biggest Prime of", Num, "is ", resault
