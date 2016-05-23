@@ -1,11 +1,9 @@
 """The prime factors of 13195 are 5, 7, 13 and 29.
-What is the largest prime factor of the number 600851475143 ?"""
+What is the largest prime factor of the number 600851475143 ? """
 
 import math
 
 def factorize(li, N, D):
-	print "N=", N ,", D=", D 
-	
 	if(N==D):
 		li.append(D)
 		return 

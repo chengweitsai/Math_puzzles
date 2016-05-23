@@ -17,5 +17,5 @@ for e in li:
 	resault += e
 
 print li
-print "Answer :\n" + str(resault)
+print "the sum of all the multiples of 3 or 5 below 1000 :\n" + str(resault)
 
